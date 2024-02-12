@@ -149,7 +149,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .navbar {
         padding: 10px;
     }
@@ -180,7 +180,7 @@ footer {
 
     .image-container,
     .text-container {
-        max-width: 100%;
+        max-width: fit-content;
     }
 
     .certificates .certificate img {
