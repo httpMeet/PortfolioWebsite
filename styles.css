@@ -39,13 +39,13 @@ body {
 }
 
 .section {
-    padding: 50px 0;
+    padding: 50px 10%; 
     text-align: center;
     flex-grow: 1;
 }
 
 .section h2 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .image-container img {
@@ -60,10 +60,10 @@ body {
 }
 
 .hero {
-    background-color: #2c3e50; /* Changed from 2c3e50 to #2c3e50 */
+    background-color: #2c3e50; 
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 10%; 
 }
 
 .hero-content {
@@ -77,6 +77,7 @@ body {
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto 20px;
+    z-index: 1; 
 }
 
 .profile-pic img {
@@ -109,8 +110,9 @@ body {
     max-width: 500px;
     border-radius: 30px;
 }
+
 .contact {
-    padding: 20px 0;
+    padding: 20px 10%;
     text-align: center;
 }
 
@@ -143,7 +145,7 @@ footer {
     }
 
     .hero {
-        padding: 80px 0;
+        padding: 80px 10%; 
     }
 
     .hero-content {
@@ -153,6 +155,7 @@ footer {
     .profile-pic {
         width: 120px;
         height: 120px;
+        z-index: 3; 
     }
 
     .about-me-content {
@@ -165,7 +168,7 @@ footer {
     }
 
     .certificates .certificate img:hover {
-        transform: none; /* Remove hover effect on mobile devices */
+        transform: none; 
     }
 }
 
@@ -179,8 +182,12 @@ footer {
         margin: 10px 0;
     }
 
+    .section {
+        padding: 30px 5%; 
+    }
+
     .hero {
-        padding: 60px 0;
+        padding: 60px 5%; 
     }
 
     .hero-content {
@@ -188,6 +195,7 @@ footer {
     }
 
     .profile-pic {
+        margin-top: 80px;
         width: 100px;
         height: 100px;
     }
@@ -202,6 +210,10 @@ footer {
     }
 
     .certificates .certificate img {
-        max-width: 100%; /* Maximize the size of certificates */
+        max-width: 100%; 
+    }
+
+    .contact {
+        padding: 15px 5%;
     }
 }
