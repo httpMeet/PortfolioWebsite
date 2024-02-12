@@ -180,7 +180,7 @@ footer {
 
     .image-container,
     .text-container {
-        max-width: 100px;
+        min-width: 100px;
     }
 
     .certificates .certificate img {
