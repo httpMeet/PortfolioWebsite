@@ -155,7 +155,7 @@ footer {
 @media screen and (max-width: 480px) {
     .navbar {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         padding: 10px;
     }
 
