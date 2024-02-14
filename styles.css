@@ -176,9 +176,6 @@ footer {
         width: 100px;
         height: 100px;
     }
-    h4{
-        margin-bottom: 150px;
-    }
 
     .about-me-content {
         flex-direction: column;
