@@ -1,12 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #2c3e50;
-    color: #fff;
+    color: rgb(94, 4, 4);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: center;
 }
 
 .navbar {
@@ -43,13 +44,13 @@ body {
     padding: 50px 0;
     text-align: center;
     flex-grow: 1;
-    
 }
 
 .section h2 {
     margin-top: 80px;
     margin-bottom: 30px;
-} 
+}
+
 .image-container img {
     max-width: 100%;
     height: auto;
@@ -66,11 +67,18 @@ body {
     color: #fff;
     text-align: center;
     padding: 100px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .hero-content {
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    padding: 0 20px; 
+    color: #fff;
 }
 
 .profile-pic {
@@ -91,6 +99,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: #fff;
 }
 
 .image-container {
@@ -112,6 +121,17 @@ body {
     border-radius: 30px;
 }
 
+.certificates .certificate p a {
+    color: #ffcc00; 
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.certificates .certificate p a:hover {
+    text-decoration: underline;
+}
+
 .contact {
     padding: 20px 0;
     text-align: center;
@@ -125,15 +145,21 @@ body {
 }
 
 .btn {
-    display:inline-block;
+    display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
-    background-color: #3498db;
+    background-color: #fff;
+    color: #3498db;
+    border: 1px solid #3498db;
     border-radius: 5px;
     margin: 5px;
     height: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -182,18 +208,19 @@ footer {
         text-align: center;
     }
 
-    .image-container
-     {
+    .image-container {
         max-width: max-content;
     }
-    .text-container{
+
+    .text-container {
         max-width: max-content;
     }
 
     .certificates .certificate img {
         max-width: 100%;
     }
-    #aboutme{
+
+    #aboutme {
         margin-top: 150px;
     }
 }
