@@ -47,7 +47,7 @@ body {
 }
 
 .section h2 {
-    margin-top: 150px;
+    margin-top: 80px;
     margin-bottom: 30px;
 } 
 .image-container img {
@@ -193,7 +193,7 @@ footer {
     .certificates .certificate img {
         max-width: 100%;
     }
-    .section h2{
+    .about-me section h2{
         margin-top: 100px;
     }
 }
