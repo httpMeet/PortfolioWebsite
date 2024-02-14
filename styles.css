@@ -193,7 +193,7 @@ footer {
     .certificates .certificate img {
         max-width: 100%;
     }
-    .about-me section h2{
-        margin-top: 100px;
+    #aboutme{
+        margin-top: 150px;
     }
 }
