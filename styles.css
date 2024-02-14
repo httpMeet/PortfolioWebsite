@@ -156,11 +156,11 @@ footer {
     .navbar {
         display: flex;
         justify-content: center;
-        padding: 10px;
     }
 
     .navbar li {
         margin: 10px 0;
+        padding: 5px;
     }
 
     .hero {
