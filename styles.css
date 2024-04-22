@@ -255,7 +255,35 @@ footer {
         max-width: 100%;
     }
 
-    #aboutme {
-        margin-top: 150px;
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Contact-img,
+    .Contact-img1 {
+        margin-right: 0;
+    }
+
+    .navbar,
+    .hero,
+    .contact {
+        padding: 40px 0;
+    }
+
+    .hero-content,
+    .about-me-content,
+    .image-container,
+    .text-container {
+        padding: 0 15px;
+    }
+
+    .section h2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 20px 0;
     }
 }
