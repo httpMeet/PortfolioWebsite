@@ -224,16 +224,19 @@ footer {
         padding: 5px;
     }
 
-    .hero {
-        padding: 60px 0;
+    .hero,
+    .contact {
+        padding: 40px 0;
     }
 
-    .hero-content {
-        max-width: 100%;
+    .hero-content,
+    .about-me-content,
+    .image-container,
+    .text-container {
+        padding: 0 15px;
     }
 
     .profile-pic {
-        margin-top: 10px;
         width: 100px;
         height: 100px;
     }
@@ -243,12 +246,9 @@ footer {
         text-align: center;
     }
 
-    .image-container {
-        max-width: max-content;
-    }
-
+    .image-container,
     .text-container {
-        max-width: max-content;
+        max-width: 100%;
     }
 
     .certificates .certificate img {
@@ -263,19 +263,6 @@ footer {
     .Contact-img,
     .Contact-img1 {
         margin-right: 0;
-    }
-
-    .navbar,
-    .hero,
-    .contact {
-        padding: 40px 0;
-    }
-
-    .hero-content,
-    .about-me-content,
-    .image-container,
-    .text-container {
-        padding: 0 15px;
     }
 
     .section h2 {
