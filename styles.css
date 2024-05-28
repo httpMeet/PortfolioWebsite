@@ -13,6 +13,23 @@ body {
 html {
     scroll-behavior: smooth;
 }
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00FF00; /* Adjust this to match your design */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none; /* Remove default link underline */
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.btn:hover {
+    background-color: #009900; /* Darken the button slightly on hover */
+}
 
 .Contact-img {
     max-width: 20px;
@@ -186,7 +203,7 @@ html {
 }
 
 .Contact-img,
-.Contact-img1 {
+.Contact-img1,.contact-img2 {
     margin-right: 10px;
 }
 
@@ -201,7 +218,13 @@ html {
     font-weight: bold;
     cursor: pointer;
 }
-
+.Contact-img2{
+    width: 3%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 190px;
+}
 footer {
     background-color: #333;
     color: #fff;
@@ -287,3 +310,63 @@ footer {
         max-width: 100%;
     }
 }
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 10px; /* Adjust body padding for smaller screens */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section h2 {
+        margin-top: 50px; /* Adjust section heading margin for smaller screens */
+    }
+
+    .image-container img,
+    .image-medium {
+        width: 100%; /* Make images responsive within their containers */
+    }
+
+    .hero-content {
+        max-width: 100%; /* Make hero content responsive */
+    }
+
+    .profile-pic {
+        width: 100px; /* Adjust profile picture size for smaller screens */
+        height: 100px;
+    }
+
+    .about-me-content {
+        flex-direction: column; /* Stack about me content vertically on smaller screens */
+        text-align: center;
+    }
+
+    .text-container {
+        max-width: 100%;
+        text-align: center; /* Center text within its container */
+    }
+
+    .contact-img2 {
+        padding-left: 0; /* Remove padding for contact image */
+    }
+
+    footer {
+        padding: 10px; /* Adjust footer padding for smaller screens */
+    }
+
+    .message-me h2 {
+        font-size: 1.5em; /* Decrease message heading font size for smaller screens */
+    }
+
+    .message-me form {
+        max-width: 100%; /* Make message form responsive */
+    }
+}
+
