@@ -369,4 +369,12 @@ footer {
         max-width: 100%; /* Make message form responsive */
     }
 }
+@media screen and (max-width: 768px) {
+
+    .Contact-img2 {
+        width: 30px; /* Adjust the width as needed for smaller screens */
+        margin-right: 10px; /* Add margin-right to separate it from the text */
+        padding-left: 0; /* Remove unnecessary padding */
+    }
+}
 
