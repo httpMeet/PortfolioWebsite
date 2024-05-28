@@ -351,8 +351,8 @@ footer {
     }
 
     footer {
-        padding: 10px;
-        width: 100%;
+        padding: 20px 10px;
+        text-align: center;
     }
 
     .message-me h2 {
@@ -362,6 +362,28 @@ footer {
     .message-me form {
         max-width: 100%;
     }
+
+    .contact {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-buttons > a {
+        margin-bottom: 10px;
+        color: #ffcc00;
+        text-align: center;
+    }
 }
+
 
 
