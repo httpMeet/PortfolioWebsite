@@ -333,7 +333,7 @@ footer {
     }
 
     .profile-pic {
-        margin: 20px auto; /* Center profile picture */
+        margin: 90px auto; /* Center profile picture */
         width: 100px; /* Adjust profile picture size for smaller screens */
         height: 100px;
     }
