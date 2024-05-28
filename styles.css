@@ -302,22 +302,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .about-me-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .image-container, .text-container {
-        max-width: 100%;
-    }
-}
-@media screen and (max-width: 768px) {
+    /* Other existing styles... */
+
     body {
-        padding: 0 10px; /* Adjust body padding for smaller screens */
+        text-align: center; /* Center align all content */
     }
 
     .navbar {
         flex-direction: column;
         align-items: center;
+        position: fixed;
     }
 
     .navbar li {
@@ -339,6 +333,7 @@ footer {
     }
 
     .profile-pic {
+        margin: 20px auto; /* Center profile picture */
         width: 100px; /* Adjust profile picture size for smaller screens */
         height: 100px;
     }
@@ -351,10 +346,12 @@ footer {
     .text-container {
         max-width: 100%;
         text-align: center; /* Center text within its container */
+        margin: 0 auto; /* Center text container */
     }
 
     .contact-img2 {
-        padding-left: 0; /* Remove padding for contact image */
+        margin: 0 auto; /* Center contact image */
+        padding-left: 0; /* Remove unnecessary padding */
     }
 
     footer {
@@ -367,14 +364,6 @@ footer {
 
     .message-me form {
         max-width: 100%; /* Make message form responsive */
-    }
-}
-@media screen and (max-width: 768px) {
-
-    .Contact-img2 {
-        width: 30px; /* Adjust the width as needed for smaller screens */
-        margin-right: 10px; /* Add margin-right to separate it from the text */
-        padding-left: 0; /* Remove unnecessary padding */
     }
 }
 
