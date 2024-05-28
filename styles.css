@@ -302,16 +302,13 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    /* Other existing styles... */
-
     body {
-        text-align: center; /* Center align all content */
+        text-align: center;
     }
 
     .navbar {
         flex-direction: column;
         align-items: center;
-        position: fixed;
     }
 
     .navbar li {
@@ -320,50 +317,51 @@ footer {
     }
 
     .section h2 {
-        margin-top: 50px; /* Adjust section heading margin for smaller screens */
+        margin-top: 50px;
     }
 
     .image-container img,
     .image-medium {
-        width: 100%; /* Make images responsive within their containers */
+        width: 100%;
     }
 
     .hero-content {
-        max-width: 100%; /* Make hero content responsive */
+        max-width: 100%;
     }
 
     .profile-pic {
-        margin-top: 150px; /* Center profile picture */
-        width: 100px; /* Adjust profile picture size for smaller screens */
+        margin-top: 150px;
+        width: 100px;
         height: 100px;
     }
 
     .about-me-content {
-        flex-direction: column; /* Stack about me content vertically on smaller screens */
+        flex-direction: column;
         text-align: center;
     }
 
     .text-container {
         max-width: 100%;
-        text-align: center; /* Center text within its container */
-        margin: 0 auto; /* Center text container */
+        margin: 0 auto;
     }
 
     .contact-img2 {
-        margin: 0 auto; /* Center contact image */
-        padding-left: 0; /* Remove unnecessary padding */
+        margin: 0 auto;
+        padding-left: 0;
     }
 
     footer {
-        padding: 10px; /* Adjust footer padding for smaller screens */
+        padding: 10px;
+        width: 100%;
     }
 
     .message-me h2 {
-        font-size: 1.5em; /* Decrease message heading font size for smaller screens */
+        font-size: 1.5em;
     }
 
     .message-me form {
-        max-width: 100%; /* Make message form responsive */
+        max-width: 100%;
     }
 }
+
 
