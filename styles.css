@@ -9,6 +9,9 @@ body {
     min-height: 100vh;
     justify-content: center;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .Contact-img {
     max-width: 20px;
