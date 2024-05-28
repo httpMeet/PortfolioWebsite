@@ -21,6 +21,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#message-me">Contact Us </a></li>
         </ul>
     </nav>
 
@@ -37,7 +38,7 @@
     </header>
 
     <section id="about" class="about-me section">
-        <h2 id="aboutme">About Me</h2>
+        <h2 id="aboutme">About <span>Me</span></h2>
 
         <div class="about-me-content">
             <div class="image-container">
@@ -71,7 +72,7 @@
     </section>
 
     <section id="certificates" class="certificates section">
-        <h2>Certificates</h2>
+        <h2>Certi<span>ficates</span></h2>
         <div class="certificate">
             <img src="images/Html.png" alt="Certificate 1">
             <p><a clss="Download-certificate" href="images/html.pdf" download>Download Certificate Of Html</a></p>
@@ -98,7 +99,16 @@
         </div>
     </div>
     </section>
-
+    <section id="message-me" class="message-me section">
+        <h2>CONTACT <span>US</span></h2>
+        <form>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
     <footer class="section">
         <p>&copy; 2023 Gandhi Meet. All rights reserved.</p>
     </footer>
