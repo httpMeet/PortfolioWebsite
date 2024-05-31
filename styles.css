@@ -16,19 +16,19 @@ html {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #00FF00; /* Adjust this to match your design */
+    background-color: #00FF00; 
     border: 1px solid #fff;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     color: #fff;
-    text-decoration: none; /* Remove default link underline */
+    text-decoration: none; 
     transition: background-color 0.3s ease;
-    margin-top: 20px; /* Adjust spacing as needed */
+    margin-top: 20px; 
 }
 
 .btn:hover {
-    background-color: #009900; /* Darken the button slightly on hover */
+    background-color: #009900; 
 }
 
 .Contact-img {
@@ -259,7 +259,7 @@ footer {
     color:#00FF00
 }
 .message-me h2 span {
-    color: #00FF00; /* Adjust this to match the green color in the screenshot */
+    color: #00FF00; 
 }
 
 .message-me form {
@@ -288,7 +288,7 @@ footer {
 
 .message-me button {
     padding: 10px;
-    background-color: #00FF00; /* Adjust this to match the green button in the screenshot */
+    background-color: #00FF00; 
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -298,7 +298,7 @@ footer {
 }
 
 .message-me button:hover {
-    background-color: #009900; /* Darken the button slightly on hover */
+    background-color: #009900; 
 }
 
 @media screen and (max-width: 768px) {
