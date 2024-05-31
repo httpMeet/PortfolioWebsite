@@ -2,8 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2c3e50;
-    color: rgb(94, 4, 4);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -13,10 +12,16 @@ body {
 html {
     scroll-behavior: smooth;
 }
+.text-container{
+    color: #111;
+}
+.contact{
+    background-color: #7843e9;
+}
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #00FF00; 
+    background-color: #7843e9; 
     border: 1px solid #fff;
     border-radius: 5px;
     font-weight: bold;
@@ -61,7 +66,7 @@ html {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #333;
+    background-color: #fff;
     padding: 10px 0;
     text-align: center;
 }
@@ -81,9 +86,10 @@ html {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    color: #111;
 }
 .navbar a:hover{
-    color:#00FF00;
+    color:#7843e9;
 }
 
 .section {
@@ -109,10 +115,12 @@ html {
 }
 
 .hero {
-    background-color: #2c3e50;
     color: #fff;
-    text-align: center;
+    background:linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    background-position: center;
     padding: 100px 0;
+    position: relative;
+    text-align: center;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -124,7 +132,7 @@ html {
     text-align: center;
     justify-content: center;
     padding: 0 20px; 
-    color: #fff;
+    color: #111;
 }
 
 .profile-pic {
@@ -168,7 +176,7 @@ html {
 }
 
 .certificates .certificate p a {
-    color: #ffcc00; 
+    color: #111; 
     font-family: Arial, sans-serif; 
     font-weight: bold;
     text-decoration: none;
@@ -199,7 +207,7 @@ html {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    color: #ffcc00;
+    color: #fff;
 }
 
 .Contact-img,
@@ -234,7 +242,7 @@ footer {
 }
 
 .message-me {
-    background-color: #2c3e50;
+    background-color: #fff;
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -243,23 +251,20 @@ footer {
 .message-me h2 {
     margin-bottom: 30px;
     font-size: 2em;
-    color: #fff;
+    color: #111;
 }
 .certificates h2{
-    color:#00FF00;
+    color:#111;
     font-size: 2em;
     margin-bottom: 30px;
 }
 .about-me h2{
-    color:#fff;
+    color:#111;
     font-size: 2em;
     margin-bottom: 30px;
 }
-.about-me h2 span{
-    color:#00FF00
-}
 .message-me h2 span {
-    color: #00FF00; 
+    color: #111; 
 }
 
 .message-me form {
@@ -273,10 +278,12 @@ footer {
 .message-me input,
 .message-me textarea {
     padding: 10px;
-    border: 1px solid #fff;
+    border: 1px solid #111;
     background-color: inherit;
-    color: #fff;
+    color: #111;
+    background: #f0f0f0;
     border-radius: 5px;
+    border: 1px solid #f0f0f0;
     width: 100%;
     box-sizing: border-box;
 }
@@ -288,7 +295,7 @@ footer {
 
 .message-me button {
     padding: 10px;
-    background-color: #00FF00; 
+    background-color: #7843e9; 
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -296,11 +303,6 @@ footer {
     color: #fff;
     transition: background-color 0.3s ease;
 }
-
-.message-me button:hover {
-    background-color: #009900; 
-}
-
 @media screen and (max-width: 768px) {
     body {
         text-align: center;
