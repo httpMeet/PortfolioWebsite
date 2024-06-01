@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:fontawsome;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -32,9 +32,6 @@ html {
     margin-top: 20px; 
 }
 
-.btn:hover {
-    background-color: #009900; 
-}
 .contact{
     display: flex;
     flex-direction: column;
@@ -242,7 +239,6 @@ footer {
     padding: 10px 0;
     flex-shrink: 0;
 }
-
 .message-me {
     background-color: #fff;
     color: #fff;
