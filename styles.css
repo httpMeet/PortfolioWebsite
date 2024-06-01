@@ -35,6 +35,10 @@ html {
 .btn:hover {
     background-color: #009900; 
 }
+.contact{
+    display: flex;
+    flex-direction: column;
+}
 
 .Contact-img {
     max-width: 20px;
@@ -227,11 +231,9 @@ html {
     cursor: pointer;
 }
 .Contact-img2{
-    width: 3%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 190px;
+    max-width: 3%;
+    margin-right: 10px;
+    margin-left: 210px;
 }
 footer {
     background-color: #333;
