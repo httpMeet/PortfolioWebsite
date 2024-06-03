@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'FontAwesome', sans-serif;
+    font-family: FontAwesome;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -180,7 +180,7 @@ html {
 
 .certificates .certificate p a {
     color: #111;
-    font-family: 'FontAwesome', sans-serif;
+    font-family: FontAwesome;
     font-weight: bold;
     text-decoration: none;
 }
@@ -327,7 +327,7 @@ footer {
     }
 
     .profile-pic {
-        margin-top: 180px;
+        margin-top: 150px;
         width: 100px;
         height: 100px;
     }
