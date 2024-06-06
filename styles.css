@@ -168,25 +168,29 @@ html {
     text-align: left;
 }
 
-.certificates .certificate {
+.projects .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 20px;
+    text-align: left;
 }
 
-.certificates .certificate img {
-    display: inline;
+.projects .project img {
+    width: 500px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.projects .project-info {
     max-width: 500px;
-    border-radius: 30px;
 }
 
-.certificates .certificate p a {
+.projects h2 {
     color: #111;
-    font-family: FontAwesome;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.certificates .certificate p a:hover {
-    text-decoration: underline;
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
 .Contact-img,
@@ -357,17 +361,14 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
+    .projects .project img{
+        width: 300px;
+    }
     .contact-buttons > a {
         margin-bottom: 5px;
         color: #fff;
         text-align: center;
     }
-
-    .certificates .certificate img {
-        max-width: 100%;
-    }
-
     .message-me h2 {
         font-size: 1.5em;
     }
