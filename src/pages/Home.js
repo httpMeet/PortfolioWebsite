@@ -2,7 +2,7 @@ import React from 'react';
 import Skills from '../components/Skills';
 import profilePic from '../assets/dp.jpg';
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <>
       <header className="hero section">

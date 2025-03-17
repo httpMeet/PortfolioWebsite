@@ -2,7 +2,7 @@ import React from 'react';
 import image1 from '../assets/1.jpg';
 import image2 from '../assets/2.webp';
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <section className="about-me section">
       <h2>About Me</h2>

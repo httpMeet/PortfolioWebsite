@@ -1,14 +1,7 @@
 import React from 'react';
 
-interface Project {
-  name: string;
-  description: string;
-  tech: string;
-  link: string;
-}
-
-const Projects: React.FC = () => {
-  const projects: Project[] = [
+const Projects = () => {
+  const projects = [
     {
       name: "Ahmedabad-Live",
       description: "A complaint management system",

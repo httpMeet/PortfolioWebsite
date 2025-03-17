@@ -1,13 +1,7 @@
 import React from 'react';
 
-interface Skill {
-  name: string;
-  level: number;
-  color: string;
-}
-
-const Skills: React.FC = () => {
-  const skills: Skill[] = [
+const Skills = () => {
+  const skills = [
     { name: 'HTML', level: 90, color: '#e34c26' },
     { name: 'CSS', level: 85, color: '#264de4' },
     { name: 'JavaScript', level: 80, color: '#f0db4f' },

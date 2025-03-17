@@ -4,7 +4,7 @@ import cssCert from '../assets/css.png';
 import jsCert from '../assets/Js.png';
 import reactCert from '../assets/react.png';
 
-const Certificates: React.FC = () => {
+const Certificates = () => {
   const certificates = [
     { 
       image: htmlCert, 
@@ -45,4 +45,4 @@ const Certificates: React.FC = () => {
   );
 };
 
-export default Certificates;
+export default Certificates; 
