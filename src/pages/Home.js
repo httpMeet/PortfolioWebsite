@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Skills from '../components/Skills';
 import profilePic from '../assets/dp.jpg';
 
@@ -14,7 +15,7 @@ const Home = () => {
           <p className="title">Passionate Frontend Developer</p>
           <p className="subtitle">Crafting Beautiful & Interactive Web Experiences</p>
           <div className="hero-buttons">
-            <a href="/about" className="btn">About Me</a>
+            <Link to="/about" className="btn">About Me</Link>
             <a href="https://github.com/httpMeet" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
             <a href="https://www.linkedin.com/in/gandhimeet1/" target="_blank" rel="noopener noreferrer" className="btn">LinkedIn</a>
           </div>
