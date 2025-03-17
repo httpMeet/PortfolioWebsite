@@ -24,6 +24,12 @@ body {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
+.navbar.scrolled {
+  padding: 10px 0;
+  background-color: rgba(26, 26, 46, 0.98);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
 .navbar ul {
   list-style: none;
   margin: 0;
@@ -692,6 +698,29 @@ footer::before {
     padding: 3px 8px;
     margin: 2px;
   }
+
+  .hamburger {
+    right: 15px;
+  }
+  
+  .nav-menu {
+    top: 65px;
+  }
+  
+  .navbar-container {
+    height: 45px;
+  }
+  
+  .navbar a {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  
+  .bar {
+    width: 22px;
+    height: 2px;
+    margin: 4px auto;
+  }
 }
 
 /* Fix for very small screens */
@@ -957,6 +986,8 @@ footer::before {
   align-items: center;
   width: 100%;
   position: relative;
+  padding: 0 20px;
+  height: 50px;
 }
 
 /* Hamburger Menu */
@@ -964,6 +995,11 @@ footer::before {
   display: none;
   cursor: pointer;
   z-index: 1001;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
 }
 
 .bar {
@@ -983,16 +1019,16 @@ footer::before {
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 0;
+  }
+  
   .navbar-container {
-    justify-content: flex-end;
-    padding: 0 20px;
+    justify-content: center;
   }
   
   .hamburger {
     display: block;
-    position: absolute;
-    right: 20px;
-    top: 0;
   }
   
   .hamburger .bar.active:nth-child(1) {
@@ -1010,15 +1046,19 @@ footer::before {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 60px;
+    top: 70px;
     flex-direction: column;
-    background-color: rgba(26, 26, 46, 0.95);
+    background-color: rgba(26, 26, 46, 0.98);
     width: 100%;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     padding: 20px 0;
     border-radius: 0 0 10px 10px;
+    z-index: 1000;
+    height: auto;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
   }
   
   .nav-menu.active {
@@ -1029,9 +1069,30 @@ footer::before {
     flex-direction: column;
     gap: 15px;
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
   
   .navbar li {
     margin: 10px 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    display: block;
+    padding: 12px 20px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hamburger {
+    right: 15px;
+  }
+  
+  .nav-menu {
+    top: 55px;
   }
 } 
