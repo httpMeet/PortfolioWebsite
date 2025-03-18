@@ -9,6 +9,9 @@ body {
   min-height: 100vh;
   line-height: 1.6;
 }
+h2 {
+  margin-top: 60px;
+}
 
 /* Navigation Styles */
 .navbar {
@@ -700,7 +703,7 @@ footer::before {
   }
 
   .hamburger {
-    right: 15px;
+    right: 35px;
   }
   
   .nav-menu {
@@ -1089,7 +1092,7 @@ footer::before {
 
 @media screen and (max-width: 480px) {
   .hamburger {
-    right: 15px;
+    right: 35px;
   }
   
   .nav-menu {
