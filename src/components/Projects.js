@@ -9,9 +9,27 @@ const Projects = () => {
       link: "https://github.com/httpMeet/Ahmedabad-Live"
     },
     {
+      name:"Fin-Flow",
+      description: "A finance management application",
+      tech: "Html, CSS, JavaScript, React",
+      link: "https://github.com/httpMeet/FinFlow"
+    },
+    {
+      name:"Recyclo-cart",
+      description: "An e-commerce platform for recycling products",
+      tech: "Html, CSS, JavaScript, PHP",
+      link: "https://github.com/httpMeet/recyclo-cart"
+    },
+    {
+      name:"To-Do-List",
+      description: "A simple to-do list application",
+      tech: "Html, CSS, JavaScript, React",
+      link: "https://github.com/httpMeet/To-Do-List"
+    },
+    {
       name: "Portfolio Website",
       description: "My portfolio website with HTML, CSS & JS",
-      tech: "HTML, CSS, JavaScript",
+      tech: "HTML, CSS, JavaScript, React",
       link: "https://github.com/httpMeet/PortfolioWebsite"
     },
     {
@@ -27,10 +45,10 @@ const Projects = () => {
       link: "https://github.com/httpMeet/Link-Saver-Bookmark-"
     },
     {
-      name: "Passenger-Counter",
-      description: "A simple passenger counting application",
-      tech: "JavaScript, CSS",
-      link: "https://github.com/httpMeet/Passanger-Counter-"
+      name:"Wedding-Invite-card-Generator",
+      description: "A wedding invitation card generator",
+      tech: "HTML, CSS, JavaScript",
+      link: "https://github.com/httpMeet/invite-card-generator"
     },
     {
       name: "Shopping-List-App",
