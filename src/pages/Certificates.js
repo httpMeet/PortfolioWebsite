@@ -3,27 +3,31 @@ import htmlCert from '../assets/Html.png';
 import cssCert from '../assets/css.png';
 import jsCert from '../assets/Js.png';
 import reactCert from '../assets/react.png';
+import html from '../assets/html.pdf';
+import css from '../assets/css.pdf';
+import js from '../assets/java script.pdf';
+import react from '../assets/ReactJs.pdf';
 
 const Certificates = () => {
   const certificates = [
     { 
       image: htmlCert, 
-      pdfName: 'html.pdf', 
+      pdfName: { html }, 
       title: 'HTML' 
     },
     { 
       image: cssCert, 
-      pdfName: 'css.pdf', 
+      pdfName: { css }, 
       title: 'CSS' 
     },
     { 
       image: jsCert, 
-      pdfName: 'java script.pdf', 
+      pdfName: { js }, 
       title: 'JavaScript' 
     },
     { 
       image: reactCert, 
-      pdfName: 'ReactJs.pdf', 
+      pdfName: { react }, 
       title: 'React' 
     },
   ];
@@ -35,7 +39,7 @@ const Certificates = () => {
         <div className="certificate" key={index}>
           <img src={cert.image} alt={`${cert.title} Certificate`} />
           <p>
-            <a href={`/assets/${cert.pdfName}`} download>
+            <a href={Object.values(cert.pdfName)[0]} download>
               Download Certificate Of {cert.title}
             </a>
           </p>
@@ -45,4 +49,4 @@ const Certificates = () => {
   );
 };
 
-export default Certificates; 
+export default Certificates;
