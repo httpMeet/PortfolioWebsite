@@ -83,6 +83,26 @@ h2 {
   display: inline-block;
 }
 
+.project-h2{
+  margin-bottom: 40px;
+  font-size: 2.8em;
+  color: #4cc9f0;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.project-h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(90deg, #4cc9f0, #f72585);
+  bottom: -10px;
+  left: 25%;
+  border-radius: 2px;
+}
+
 .section h2::after {
   content: '';
   position: absolute;

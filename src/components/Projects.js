@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Projects = () => {
   const projects = [
     {
@@ -60,7 +61,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <h2>My Projects</h2>
+      <h2 className='project-h2'>My Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
