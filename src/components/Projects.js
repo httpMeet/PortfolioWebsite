@@ -5,25 +5,25 @@ const Projects = () => {
     {
       name: "Ahmedabad-Live",
       description: "A complaint management system",
-      tech: "PHP",
+      tech: "HTML, CSS, JavaScript, PHP",
       link: "https://github.com/httpMeet/Ahmedabad-Live"
     },
     {
       name:"Fin-Flow",
       description: "A finance management application",
-      tech: "Html, CSS, JavaScript, React",
+      tech: "HTML, CSS, JavaScript, React",
       link: "https://github.com/httpMeet/FinFlow"
     },
     {
       name:"Recyclo-cart",
       description: "An e-commerce platform for recycling products",
-      tech: "Html, CSS, JavaScript, PHP",
+      tech: "HTML, CSS, JavaScript, PHP",
       link: "https://github.com/httpMeet/recyclo-cart"
     },
     {
       name:"To-Do-List",
       description: "A simple to-do list application",
-      tech: "Html, CSS, JavaScript, React",
+      tech: "HTML, CSS, JavaScript, React",
       link: "https://github.com/httpMeet/To-Do-List"
     },
     {
@@ -35,13 +35,13 @@ const Projects = () => {
     {
       name: "Black-Jack Game",
       description: "A classic Black Jack card game implementation",
-      tech: "JavaScript",
+      tech: "HTML, CSS, JavaScript",
       link: "https://github.com/httpMeet/Black-Jack-Game"
     },
     {
       name: "Link-Saver-Bookmark",
       description: "A tool to save and organize bookmarks",
-      tech: "JavaScript",
+      tech: "HTML, CSS, JavaScript",
       link: "https://github.com/httpMeet/Link-Saver-Bookmark-"
     },
     {
@@ -53,7 +53,7 @@ const Projects = () => {
     {
       name: "Shopping-List-App",
       description: "An app to create and manage shopping lists",
-      tech: "JavaScript, CSS",
+      tech: "HTML, CSS, JavaScript",
       link: "https://github.com/httpMeet/Shopping-List-App"
     }
   ];
