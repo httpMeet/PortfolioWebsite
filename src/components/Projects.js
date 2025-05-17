@@ -16,6 +16,12 @@ const Projects = () => {
       link: "https://github.com/httpMeet/FinFlow"
     },
     {
+      name:"Techstudyhub",
+      description: "A Website To Help Students To Learn Provding Study Material",
+      tech: "HTML, CSS, JavaScript",
+      link: "https://sites.google.com/view/techstudyhub"
+    },
+    {
       name:"Recyclo-cart",
       description: "An e-commerce platform for recycling products",
       tech: "HTML, CSS, JavaScript, PHP",
@@ -69,7 +75,7 @@ const Projects = () => {
             <p>{project.description}</p>
             <p className="tech-stack">Tech: {project.tech}</p>
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn project-btn">
-              View on GitHub
+              View Project
             </a>
           </div>
         ))}
