@@ -4,16 +4,22 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
-      name: "Ahmedabad-Live",
-      description: "A complaint management system",
-      tech: "HTML, CSS, JavaScript, PHP",
-      link: "https://github.com/httpMeet/Ahmedabad-Live"
+      name:"Locify-A Password Manager",
+      description: "A password manager that allows users to securely store and manage their passwords.",
+      tech:"HTML, CSS, JavaScript, React, PHP",
+      link:"https://github.com/httpMeet/Locify-A-Password-Manager"
     },
     {
       name:"Fin-Flow",
       description: "A finance management application",
-      tech: "HTML, CSS, JavaScript, React",
+      tech: "HTML, CSS, JavaScript, React, DJANGO",
       link: "https://github.com/httpMeet/FinFlow"
+    },
+    {
+      name: "Ahmedabad-Live",
+      description: "A complaint management system",
+      tech: "HTML, CSS, JavaScript, PHP",
+      link: "https://github.com/httpMeet/Ahmedabad-Live"
     },
     {
       name:"Techstudyhub",
