@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Skills from '../components/Skills';
 import profilePic from '../assets/dp.jpg';
+import MeetGandhiResume from '../assets/MeetGandhiResume.pdf';
 // Asset imports removed
 
 const Home = () => {
@@ -48,7 +49,7 @@ const Home = () => {
             <Link to="/about" className="btn">About Me</Link>
             <a href="https://github.com/httpMeet" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
             <a href="https://www.linkedin.com/in/gandhimeet1/" target="_blank" rel="noopener noreferrer" className="btn">LinkedIn</a>
-            <a href="/assets/MeetGandhiResume.pdf" download className='btn'>Download Resume</a>
+            <a href={MeetGandhiResume} download className='btn'>Download Resume</a>
           </div>
         </div>
       </header>
