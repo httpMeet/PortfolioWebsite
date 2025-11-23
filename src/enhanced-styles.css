@@ -1,3 +1,9 @@
+/* Animation Keyframes */
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -232,9 +238,18 @@ h2 {
 }
 
 .title {
-  font-size: 1.8em;
-  margin-bottom: 15px;
-  font-weight: 500;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* New rotating animation style */
+.title.animated-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 500;
+    /* Apply animation whenever the React key changes */
+    animation: slideIn 0.5s ease-out;
 }
 
 .subtitle {

@@ -8,6 +8,8 @@ const Skills = () => {
     { name: 'React', level: 75 },
     { name: 'TypeScript', level: 70 },
     { name: 'Git', level: 75 },
+    { name: 'PHP', level: 70 },
+    { name: 'MySQL', level: 65 },
   ];
 
   return (
@@ -25,7 +27,6 @@ const Skills = () => {
                 className="skill-bar" 
                 style={{
                   width: `${skill.level}%`,
-                  // Individual color removed, using CSS gradient
                 }}
               />
             </div>
