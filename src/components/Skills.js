@@ -2,12 +2,12 @@ import React from 'react';
 
 const Skills = () => {
   const skills = [
-    { name: 'HTML', level: 90, color: '#e34c26' },
-    { name: 'CSS', level: 85, color: '#264de4' },
-    { name: 'JavaScript', level: 80, color: '#f0db4f' },
-    { name: 'React', level: 75, color: '#61dafb' },
-    { name: 'TypeScript', level: 70, color: '#007acc' },
-    { name: 'Git', level: 75, color: '#f34f29' },
+    { name: 'HTML', level: 90 },
+    { name: 'CSS', level: 85 },
+    { name: 'JavaScript', level: 80 },
+    { name: 'React', level: 75 },
+    { name: 'TypeScript', level: 70 },
+    { name: 'Git', level: 75 },
   ];
 
   return (
@@ -25,7 +25,7 @@ const Skills = () => {
                 className="skill-bar" 
                 style={{
                   width: `${skill.level}%`,
-                  backgroundColor: skill.color,
+                  // Individual color removed, using CSS gradient
                 }}
               />
             </div>
@@ -36,4 +36,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

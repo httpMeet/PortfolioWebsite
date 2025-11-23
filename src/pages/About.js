@@ -1,6 +1,6 @@
 import React from 'react';
 import image1 from '../assets/1.jpg';
-import image2 from '../assets/2.webp';
+// Removed image2 import for simplified layout
 
 const About = () => {
   return (
@@ -9,8 +9,8 @@ const About = () => {
 
       <div className="about-me-content">
         <div className="image-container">
-          <img className="image-medium" src={image1} alt="Image 1" />
-          <img className="image-medium" src={image2} alt="Image 2" />
+          {/* Changed class to image-large for a prominent visual */}
+          <img className="image-large" src={image1} alt="Meet Gandhi coding" />
         </div>
 
         <div className="text-container">
@@ -26,14 +26,12 @@ const About = () => {
 
           <p>Let's collaborate and create something amazing together! Whether you have a project in mind or just want to connect, feel free to reach out. I'm always open to new opportunities and exciting collaborations.</p>
 
-          <div className="contact">
-            <h3>Contact Me</h3>
-            <div className="contact-buttons">
-              <a href="https://www.linkedin.com/in/gandhimeet1/" target="_blank" rel="noopener noreferrer" className="btn">LinkedIn</a>
-              <a href="https://github.com/httpMeet" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
-              <a href="mailto:gandhimeet1104@gmail.com" className="btn">Gmail</a>
-              <a href="tel:+916351398110" className="btn">Contact Number</a>
-            </div>
+          {/* Simplified the embedded contact section */}
+          <div className="contact-buttons contact-about-page">
+            <a href="https://www.linkedin.com/in/gandhimeet1/" target="_blank" rel="noopener noreferrer" className="btn">LinkedIn</a>
+            <a href="https://github.com/httpMeet" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
+            <a href="mailto:gandhimeet1104@gmail.com" className="btn">Gmail</a>
+            <a href="tel:+916351398110" className="btn">Contact Number</a>
           </div>
         </div>
       </div>
@@ -41,4 +39,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

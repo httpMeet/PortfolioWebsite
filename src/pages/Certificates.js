@@ -35,16 +35,19 @@ const Certificates = () => {
   return (
     <section className="certificates section">
       <h2>Certificates</h2>
-      {certificates.map((cert, index) => (
-        <div className="certificate" key={index}>
-          <img src={cert.image} alt={`${cert.title} Certificate`} />
-          <p>
-            <a href={Object.values(cert.pdfName)[0]} download>
-              Download Certificate Of {cert.title}
-            </a>
-          </p>
-        </div>
-      ))}
+      {/* ADDED: New grid container */}
+      <div className="certificates-grid">
+        {certificates.map((cert, index) => (
+          <div className="certificate" key={index}>
+            <img src={cert.image} alt={`${cert.title} Certificate`} />
+            <p>
+              <a href={Object.values(cert.pdfName)[0]} download>
+                Download Certificate Of {cert.title}
+              </a>
+            </p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
