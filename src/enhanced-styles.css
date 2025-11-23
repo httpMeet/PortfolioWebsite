@@ -220,7 +220,7 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top; /* MODIFIED: Ensures face/head is prioritized */
+  object-position: top; /* FIXED: Ensures face/head is prioritized */
 }
 
 .hero h1 {
@@ -507,6 +507,7 @@ footer::before {
 }
 
 .project-card {
+  box-sizing: border-box; /* FIXED: Ensures card sizing prevents overlap */
   background-color: #212130;
   border-radius: 20px;
   padding: 30px;
