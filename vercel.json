@@ -6,7 +6,7 @@
       "permanent": true
     },
     {
-      "source": "/portfoliowebsite/",
+      "source": "/portfoliowebsite/:path*",
       "destination": "/",
       "permanent": true
     }
