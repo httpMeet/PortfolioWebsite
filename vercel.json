@@ -9,26 +9,6 @@
       "source": "/PortfolioWebsite/:path*",
       "destination": "/",
       "permanent": true
-    },
-    {
-      "source": "/about",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
-      "source": "/projects",
-      "destination": "/projects",
-      "permanent": true
-    },
-    {
-      "source": "/contact",
-      "destination": "/contact",
-      "permanent": true
-    },
-    {
-      "source": "/certificates",
-      "destination": "/certificates",
-      "permanent": true
     }
   ]
 }
