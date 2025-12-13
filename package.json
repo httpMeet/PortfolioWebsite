@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "package.json",
   "private": true,
   "version": "0.0.0",
@@ -28,5 +29,27 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "vite": "^7.2.4"
+=======
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Meet Gandhi's Portfolio",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "npx parcel build src/index.html",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "web-vitals": "^3.5.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-raw": "^2.13.3",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+>>>>>>> 7381a9f7123e353ff894246a6380b57ae7e1e407
   }
 }
