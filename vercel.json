@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/PortfolioWebsite/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/PortfolioWebsite/:path*",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
