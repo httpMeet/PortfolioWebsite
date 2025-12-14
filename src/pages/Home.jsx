@@ -25,7 +25,7 @@ const Home = () => {
 
           {/* CTA BUTTONS */}
           <div className="flex flex-wrap items-center gap-8 pt-6 text-sm">
-            {/* Primary Button */}
+            {/* Primary */}
             <Link
               to="/projects"
               className="
@@ -45,7 +45,7 @@ const Home = () => {
               </span>
             </Link>
 
-            {/* Secondary Links */}
+            {/* Secondary */}
             <Link
               to="/about"
               className="
@@ -84,7 +84,7 @@ const Home = () => {
 
       {/* WHAT I FOCUS ON */}
       <section className="max-w-4xl mx-auto px-6 py-24">
-        <h2 className="font-serif text-3xl mb-14">
+        <h2 className="font-serif text-3xl mb-14 opacity-0 animate-fadeInUp">
           What I focus on
         </h2>
 
@@ -111,11 +111,13 @@ const Home = () => {
               className="
                 p-6
                 border border-ink/30
+                opacity-0 animate-fadeInUp
                 transition-all duration-300
                 hover:-translate-y-1
                 hover:border-accent
                 hover:shadow-lg
               "
+              style={{ animationDelay: `${index * 120}ms` }}
             >
               <h3 className="font-medium mb-3">
                 {item.title}
