@@ -1,101 +1,103 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import resumePDF from "../assets/projects/MeetGandhiResume.pdf";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 40);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const linkClasses = ({ isActive }) =>
-    `block py-2 text-sm ${
-      isActive
-        ? "text-ink border-b border-accent"
-        : "text-inkMuted hover:text-ink"
-    }`;
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition ${
-        scrolled
-          ? "bg-paper/90 backdrop-blur border-b border-paperDark"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <NavLink to="/" className="font-serif text-lg">
+    <header className="fixed top-0 w-full bg-paper z-50 border-b border-ink/10">
+      <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+        {/* Logo / Name */}
+        <NavLink
+          to="/"
+          className="font-serif text-lg tracking-wide"
+        >
           Meet Gandhi
         </NavLink>
 
-        {/* Desktop */}
-        <ul className="hidden md:flex gap-8">
-          {["/", "/about", "/projects", "/certificates", "/contact"].map(
-            (path, i) => (
-              <li key={i}>
-                <NavLink to={path} className={linkClasses}>
-                  {path === "/" ? "Home" : path.slice(1)}
-                </NavLink>
-              </li>
-            )
-          )}
-        </ul>
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-8 text-sm">
+          <NavItem to="/">Home</NavItem>
+          <NavItem to="/about">About</NavItem>
+          <NavItem to="/projects">Projects</NavItem>
+          <NavItem to="/certificates">Certificates</NavItem>
+          <NavItem to="/contact">Contact</NavItem>
 
-        {/* Hamburger */}
+          {/* Resume */}
+          <a
+            href={resumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative text-sm transition-all duration-200
+                       after:absolute after:left-0 after:-bottom-1
+                       after:h-[1px] after:w-0 after:bg-accent
+                       hover:after:w-full after:transition-all
+                       hover:-translate-y-[1px]"
+          >
+            Resume
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
         <button
-          className="md:hidden flex flex-col gap-1 z-50"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setOpen(!open)}
+          className="md:hidden flex flex-col gap-[4px]"
         >
-          <span
-            className={`h-[2px] w-6 bg-ink transition ${
-              isOpen ? "rotate-45 translate-y-1.5" : ""
-            }`}
-          />
-          <span
-            className={`h-[2px] w-6 bg-ink transition ${
-              isOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`h-[2px] w-6 bg-ink transition ${
-              isOpen ? "-rotate-45 -translate-y-1.5" : ""
-            }`}
-          />
+          <span className="w-6 h-[2px] bg-ink" />
+          <span className="w-6 h-[2px] bg-ink" />
+          <span className="w-6 h-[2px] bg-ink" />
         </button>
-      </div>
+      </nav>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-paper border-t border-paperDark">
-          <ul className="px-6 py-6 space-y-4">
-            {[
-              { to: "/", label: "Home" },
-              { to: "/about", label: "About" },
-              { to: "/projects", label: "Projects" },
-              { to: "/certificates", label: "Certificates" },
-              { to: "/contact", label: "Contact" },
-            ].map((item) => (
-              <li key={item.to}>
-                <NavLink
-                  to={item.to}
-                  onClick={() => setIsOpen(false)}
-                  className={linkClasses}
-                >
-                  {item.label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+      {open && (
+        <div className="md:hidden bg-paper border-t border-ink/10 px-6 py-6 space-y-5">
+          <MobileNavItem to="/" setOpen={setOpen}>Home</MobileNavItem>
+          <MobileNavItem to="/about" setOpen={setOpen}>About</MobileNavItem>
+          <MobileNavItem to="/projects" setOpen={setOpen}>Projects</MobileNavItem>
+          <MobileNavItem to="/certificates" setOpen={setOpen}>Certificates</MobileNavItem>
+          <MobileNavItem to="/contact" setOpen={setOpen}>Contact</MobileNavItem>
+
+          {/* Resume Mobile */}
+          <a
+            href={resumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-sm font-medium"
+          >
+            Resume →
+          </a>
         </div>
       )}
-    </nav>
+    </header>
   );
 };
+
+/* ---------- Components ---------- */
+
+const NavItem = ({ to, children }) => (
+  <NavLink
+    to={to}
+    className={({ isActive }) =>
+      `relative transition-all duration-200
+       after:absolute after:left-0 after:-bottom-1
+       after:h-[1px] after:bg-ink after:transition-all
+       ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}`
+    }
+  >
+    {children}
+  </NavLink>
+);
+
+const MobileNavItem = ({ to, children, setOpen }) => (
+  <NavLink
+    to={to}
+    onClick={() => setOpen(false)}
+    className="block text-sm"
+  >
+    {children}
+  </NavLink>
+);
 
 export default Navbar;

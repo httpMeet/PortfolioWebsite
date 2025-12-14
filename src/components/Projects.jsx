@@ -8,7 +8,7 @@ import techstudyhubImg from "../assets/projects/techstudyhub.png";
 import recycloImg from "../assets/projects/recyclo-cart.png";
 import shoppingImg from "../assets/projects/shoppinglist.png";
 
-/* ---------- Project Data ---------- */
+/* ---------- Data ---------- */
 const projects = [
   {
     title: "Locify – Password Manager",
@@ -52,8 +52,7 @@ const projects = [
   },
   {
     title: "Shopping List App",
-    description:
-      "An application to manage and organize shopping lists.",
+    description: "An application to manage and organize shopping lists.",
     tech: "HTML · CSS · JavaScript",
     image: shoppingImg,
     link: "https://github.com/httpMeet/Shopping-List-App",
@@ -72,32 +71,29 @@ const Projects = () => {
     <section className="max-w-5xl mx-auto px-6 pt-28 pb-28">
       <h2 className="font-serif text-3xl mb-14">Projects</h2>
 
-      {/* Grid */}
+      {/* GRID */}
       <div className="grid gap-16 md:grid-cols-2">
         {loading
-          ? Array.from({ length: 4 }).map((_, i) => (
-              <ShimmerProject key={i} />
-            ))
+          ? Array.from({ length: 4 }).map((_, i) => <ShimmerProject key={i} />)
           : projects.map((project, index) => (
               <article
                 key={index}
-                className="group opacity-0 animate-fadeIn"
+                className="group opacity-0 animate-fadeInUp transition-all duration-300 hover:-translate-y-1"
                 style={{ animationDelay: `${index * 120}ms` }}
               >
-                {/* Image */}
-                <div className="w-full aspect-[16/9] overflow-hidden bg-paper border border-ink/25">
+                {/* IMAGE */}
+                <div className="w-full aspect-[16/9] overflow-hidden border border-ink/30 bg-paper">
                   <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
-                {/* Content */}
+                {/* CONTENT */}
                 <div className="pt-6">
-                  <h3 className="font-serif text-xl mb-2">
-                    {project.title}
-                  </h3>
+                  <h3 className="font-serif text-xl mb-2">{project.title}</h3>
 
                   <p className="text-inkMuted leading-relaxed mb-4">
                     {project.description}
@@ -111,9 +107,24 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-sm border-b border-ink/40 hover:border-ink transition"
+                    className="
+    inline-flex items-center gap-2
+    px-4 py-2
+    text-sm
+    border border-ink/30
+    bg-paper
+    transition-all duration-300 ease-out
+    hover:bg-ink hover:text-paper
+    hover:border-ink
+    hover:-translate-y-[2px]
+    hover:shadow-[0_8px_20px_rgba(0,0,0,0.15)]
+    group
+  "
                   >
-                    View on GitHub →
+                    View on GitHub
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
                   </a>
                 </div>
               </article>
@@ -123,14 +134,14 @@ const Projects = () => {
   );
 };
 
-/* ---------- Shimmer Loader ---------- */
+/* ---------- Shimmer ---------- */
 const ShimmerProject = () => (
   <div className="animate-pulse">
-    <div className="w-full aspect-[16/9] bg-paperDark/40 mb-6" />
-    <div className="h-5 w-2/3 bg-paperDark/40 mb-3" />
-    <div className="h-4 w-full bg-paperDark/40 mb-2" />
-    <div className="h-4 w-5/6 bg-paperDark/40 mb-4" />
-    <div className="h-4 w-32 bg-paperDark/40" />
+    <div className="w-full aspect-[16/9] bg-ink/15 mb-6" />
+    <div className="h-5 w-2/3 bg-ink/15 mb-3" />
+    <div className="h-4 w-full bg-ink/15 mb-2" />
+    <div className="h-4 w-5/6 bg-ink/15 mb-4" />
+    <div className="h-4 w-32 bg-ink/15" />
   </div>
 );
 

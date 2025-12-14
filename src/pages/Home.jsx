@@ -1,115 +1,134 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Skills from "../components/Skills";
-import MeetGandhiResume from "../assets/MeetGandhiResume.pdf";
 
 const Home = () => {
-  const titles = [
-    "Frontend Developer",
-    "Backend Developer",
-    "Full Stack Developer",
-  ];
-
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTitleIndex((prev) => (prev + 1) % titles.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <>
-      {/* ================= HERO ================= */}
-      <section className="max-w-4xl mx-auto px-6 pt-32 pb-16">
-        <h1 className="font-serif text-4xl md:text-5xl mb-6">Meet Gandhi</h1>
+      {/* HERO */}
+      <section className="max-w-4xl mx-auto px-6 pt-36 pb-28">
+        <div className="space-y-8 opacity-0 animate-fadeInUp">
+          <h1 className="font-serif text-5xl md:text-6xl">
+            Meet Gandhi
+          </h1>
 
-        <p className="text-lg text-inkMuted mb-6">
-          {titles[currentTitleIndex]}
-        </p>
+          <p className="text-lg text-inkMuted">
+            Frontend / Full Stack Developer
+          </p>
 
-        <p className="text-inkMuted max-w-xl leading-relaxed mb-10">
-          Focused on performance, clarity, and real-world usability — not just
-          writing code, but building reliable products.
-        </p>
+          <p className="text-inkMuted max-w-2xl leading-relaxed">
+            I build clean, scalable, and user-focused web applications with a
+            strong emphasis on performance, accessibility, and real-world
+            usability. I enjoy crafting thoughtful UI and building systems
+            that are reliable, maintainable, and production-ready.
+          </p>
 
-        {/* Buttons */}
-        <div className="flex flex-wrap items-center gap-8 text-sm">
-          <Link
-            to="/projects"
-            className="border border-paperDark px-6 py-3 hover:border-accent transition"
-          >
-            View Projects
-          </Link>
+          {/* CTA BUTTONS */}
+          <div className="flex flex-wrap items-center gap-8 pt-6 text-sm">
+            {/* Primary Button */}
+            <Link
+              to="/projects"
+              className="
+                inline-flex items-center gap-2
+                px-6 py-3
+                border border-ink/40
+                transition-all duration-300 ease-out
+                hover:bg-ink hover:text-paper
+                hover:-translate-y-[2px]
+                hover:shadow-md
+                group
+              "
+            >
+              View Projects
+              <span className="transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </Link>
 
-          <Link
-            to="/about"
-            className="border-b border-paperDark hover:border-accent transition"
-          >
-            About
-          </Link>
+            {/* Secondary Links */}
+            <Link
+              to="/about"
+              className="
+                relative
+                after:absolute after:left-0 after:-bottom-1
+                after:h-[1px] after:w-0 after:bg-ink
+                after:transition-all after:duration-300
+                hover:after:w-full
+              "
+            >
+              About
+            </Link>
 
-          <a
-            href="https://github.com/httpMeet"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-b border-paperDark hover:border-accent transition"
-          >
-            GitHub
-          </a>
-
-          <a
-            href={MeetGandhiResume}
-            download
-            className="border-b border-paperDark hover:border-accent transition"
-          >
-            Resume
-          </a>
-        </div>
-      </section>
-
-      {/* ============== DIVIDER ============== */}
-      {/* Section Divider */}
-      <div className="my-8 flex justify-center">
-        <span className="block w-full max-w-4xl border-t border-ink/30" />
-      </div>
-
-      {/* ============ WHAT I FOCUS ON ============ */}
-      <section className="max-w-4xl mx-auto px-6 pb-24">
-        <h2 className="font-serif text-3xl mb-12">What I focus on</h2>
-
-        <div className="grid md:grid-cols-3 gap-12 text-sm text-inkMuted">
-          <div>
-            <h3 className="font-medium text-ink mb-2">Clean Architecture</h3>
-            <p>
-              Writing structured, maintainable code that scales as products
-              grow.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-medium text-ink mb-2">Performance</h3>
-            <p>
-              Optimizing UI and backend interactions for speed and reliability.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-medium text-ink mb-2">Real-world Systems</h3>
-            <p>Building features that solve actual problems — not demos.</p>
+            <a
+              href="https://github.com/httpMeet"
+              target="_blank"
+              rel="noreferrer"
+              className="
+                relative
+                after:absolute after:left-0 after:-bottom-1
+                after:h-[1px] after:w-0 after:bg-ink
+                after:transition-all after:duration-300
+                hover:after:w-full
+              "
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </section>
 
-      {/* ============== DIVIDER ============== */}
-      {/* Section Divider */}
-      <div className="my-8 flex justify-center">
-        <span className="block w-full max-w-4xl border-t border-ink/30" />
+      {/* DIVIDER */}
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="h-px bg-ink/30" />
       </div>
 
-      {/* ================= SKILLS ================= */}
+      {/* WHAT I FOCUS ON */}
+      <section className="max-w-4xl mx-auto px-6 py-24">
+        <h2 className="font-serif text-3xl mb-14">
+          What I focus on
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {[
+            {
+              title: "Clean Architecture",
+              text:
+                "Writing structured, readable, and maintainable code that scales as products grow and requirements evolve.",
+            },
+            {
+              title: "Performance",
+              text:
+                "Optimizing UI interactions, load times, and data flow to deliver fast and smooth user experiences.",
+            },
+            {
+              title: "Real-world Systems",
+              text:
+                "Building applications that solve real problems with practical features — not just demo projects.",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="
+                p-6
+                border border-ink/30
+                transition-all duration-300
+                hover:-translate-y-1
+                hover:border-accent
+                hover:shadow-lg
+              "
+            >
+              <h3 className="font-medium mb-3">
+                {item.title}
+              </h3>
+              <p className="text-inkMuted text-sm leading-relaxed">
+                {item.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SKILLS */}
       <Skills />
     </>
   );

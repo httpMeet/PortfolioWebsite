@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+/* ---------- Images ---------- */
 import htmlCert from "../assets/Html.png";
 import cssCert from "../assets/css.png";
 import jsCert from "../assets/Js.png";
@@ -10,6 +11,7 @@ import css from "../assets/css.pdf";
 import js from "../assets/java script.pdf";
 import react from "../assets/ReactJs.pdf";
 
+/* ---------- Data ---------- */
 const certificates = [
   { image: htmlCert, pdf: html, title: "HTML" },
   { image: cssCert, pdf: css, title: "CSS" },
@@ -26,57 +28,77 @@ const Certificates = () => {
   }, []);
 
   return (
-    <section className="max-w-4xl mx-auto px-6 pt-32 pb-24">
-      <h2 className="font-serif text-3xl mb-12">Certificates</h2>
+    <section className="max-w-5xl mx-auto px-6 pt-28 pb-28">
+      <h2 className="font-serif text-3xl mb-14">Certificates</h2>
 
-      {/* Grid */}
-      <div className="grid sm:grid-cols-2 gap-10">
+      {/* GRID */}
+      <div className="grid gap-14 sm:grid-cols-2">
         {loading
-          ? Array.from({ length: 4 }).map((_, index) => (
-              <ShimmerCard key={index} />
+          ? Array.from({ length: 4 }).map((_, i) => (
+              <ShimmerCertificate key={i} />
             ))
           : certificates.map((cert, index) => (
-              <div
+              <article
                 key={index}
-                className="border border-paperDark bg-paper p-6"
+                className="group opacity-0 animate-fadeInUp"
+                style={{ animationDelay: `${index * 120}ms` }}
               >
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="w-full mb-6 border border-paperDark"
-                />
+                {/* IMAGE */}
+                <div className="w-full aspect-[4/3] overflow-hidden border border-ink/30 bg-paper">
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
 
-                <div className="flex items-center justify-between text-sm">
+                {/* CONTENT */}
+                <div className="pt-5 flex items-center justify-between">
                   <span className="font-medium text-ink">
                     {cert.title}
                   </span>
 
+                  {/* BUTTON */}
                   <a
                     href={cert.pdf}
                     download
-                    className="border-b border-paperDark hover:border-accent transition text-inkMuted"
+                    className="
+                      inline-flex items-center gap-2
+                      px-4 py-2
+                      text-sm
+                      border border-ink/30
+                      bg-paper
+                      transition-all duration-300 ease-out
+                      hover:bg-ink hover:text-paper
+                      hover:border-ink
+                      hover:-translate-y-[2px]
+                      hover:shadow-[0_8px_20px_rgba(0,0,0,0.15)]
+                      group
+                    "
                   >
-                    Download PDF
+                    Download
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
                   </a>
                 </div>
-              </div>
+              </article>
             ))}
       </div>
     </section>
   );
 };
 
-/* ---------- Shimmer Card ---------- */
-const ShimmerCard = () => {
-  return (
-    <div className="border border-paperDark p-6 animate-pulse">
-      <div className="h-48 bg-paperDark/40 mb-6" />
-      <div className="flex justify-between items-center">
-        <div className="h-4 w-24 bg-paperDark/40" />
-        <div className="h-4 w-20 bg-paperDark/40" />
-      </div>
+/* ---------- SHIMMER ---------- */
+const ShimmerCertificate = () => (
+  <div className="animate-pulse">
+    <div className="w-full aspect-[4/3] bg-ink/15 mb-5" />
+    <div className="flex justify-between items-center">
+      <div className="h-4 w-24 bg-ink/15" />
+      <div className="h-8 w-28 bg-ink/15" />
     </div>
-  );
-};
+  </div>
+);
 
 export default Certificates;

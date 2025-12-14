@@ -2,100 +2,101 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="max-w-4xl mx-auto px-6 pt-32 pb-24">
+    <section className="max-w-4xl mx-auto px-6 pt-28 pb-28">
       {/* Heading */}
-      <h2 className="font-serif text-3xl mb-12">About</h2>
+      <div className="mb-14 animate-fadeInUp">
+        <h2 className="font-serif text-3xl mb-4">About</h2>
+        <p className="text-inkMuted max-w-2xl leading-relaxed">
+          A deeper look into my background, approach to development, and what
+          drives my work as a developer.
+        </p>
+      </div>
 
-      {/* Content */}
-      <div className="space-y-6 text-inkMuted leading-relaxed max-w-3xl">
+      {/* Divider */}
+      <div className="h-px bg-ink/10 mb-14" />
+
+      {/* Main Content */}
+      <div className="space-y-8 text-inkMuted leading-relaxed animate-fadeInUp">
         <p>
-          Hello, I’m <span className="text-ink font-medium">Meet Gandhi</span>, a
-          Full Stack Developer based in Ahmedabad. I focus on building reliable,
-          scalable web applications by combining thoughtful frontend design with
-          practical backend engineering.
+          Hello, I’m{" "}
+          <span className="text-ink font-medium">Meet Gandhi</span>, a Full Stack
+          Developer based in Ahmedabad, India. I enjoy building reliable,
+          user-focused web applications that balance clean design with strong
+          technical foundations.
         </p>
 
         <p>
-          My background is rooted in frontend development using HTML, CSS,
-          JavaScript, React, and Tailwind CSS, where I emphasize clarity,
-          accessibility, and performance. Over time, I expanded into backend
-          development with PHP, MySQL, and API-driven architectures.
+          My journey began with frontend development, where I worked extensively
+          with HTML, CSS, JavaScript, and React to create responsive and
+          accessible user interfaces. Over time, I expanded into backend
+          development using PHP, MySQL, and RESTful APIs, allowing me to
+          understand and contribute across the entire product lifecycle.
         </p>
 
         <p>
-          I enjoy working across the full development lifecycle — from shaping
-          clean UI systems to implementing backend logic and database structures.
-          This allows me to deliver end-to-end solutions that are both usable and
-          maintainable.
+          I’ve worked on real-world projects such as secure credential managers,
+          finance tracking systems, and content-driven platforms. These projects
+          strengthened my understanding of application architecture, data flow,
+          authentication, and performance optimization.
         </p>
 
         <p>
-          I am currently pursuing a B.E. in Computer Science Engineering at
-          Gujarat Technological University, where I continue to refine my
-          technical foundation through real-world projects and hands-on work.
+          I strongly value clean architecture, readable code, and consistency.
+          Rather than rushing features, I focus on building systems that are
+          maintainable, scalable, and easy for other developers to understand.
         </p>
 
         <p>
           Outside of active development, I spend time refining UI details,
           learning modern tooling, and staying aligned with evolving best
-          practices in web engineering.
+          practices in web engineering. I believe good software is not just
+          functional — it should feel thoughtful and dependable.
         </p>
       </div>
 
-      {/* Divider */}
-      <div className="mt-14 border-t border-paperDark" />
+      {/* Contact Links – SAME AS HOME */}
+      <div className="mt-16 flex flex-wrap gap-8 animate-fadeInUp text-sm">
+        {/* LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/gandhimeet1/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            inline-flex items-center gap-2
+            px-6 py-3
+            border border-ink/40
+            transition-all duration-300 ease-out
+            hover:bg-ink hover:text-paper
+            hover:-translate-y-[2px]
+            hover:shadow-md
+            group
+          "
+        >
+          LinkedIn
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </a>
 
-      {/* Links */}
-      <div className="pt-10">
-        <p className="text-xs uppercase tracking-widest text-inkMuted mb-6">
-          Connect
-        </p>
-
-        <div className="flex flex-wrap gap-x-10 gap-y-4 text-sm">
-          <a
-            href="https://www.linkedin.com/in/gandhimeet1/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 text-inkMuted hover:text-ink transition"
-          >
-            LinkedIn
-            <span className="opacity-0 group-hover:opacity-100 transition">
-              →
-            </span>
-          </a>
-
-          <a
-            href="https://github.com/httpMeet"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 text-inkMuted hover:text-ink transition"
-          >
-            GitHub
-            <span className="opacity-0 group-hover:opacity-100 transition">
-              →
-            </span>
-          </a>
-
-          <a
-            href="mailto:gandhimeet1104@gmail.com"
-            className="group inline-flex items-center gap-2 text-inkMuted hover:text-ink transition"
-          >
-            Email
-            <span className="opacity-0 group-hover:opacity-100 transition">
-              →
-            </span>
-          </a>
-
-          <a
-            href="tel:+916351398110"
-            className="group inline-flex items-center gap-2 text-inkMuted hover:text-ink transition"
-          >
-            Phone
-            <span className="opacity-0 group-hover:opacity-100 transition">
-              →
-            </span>
-          </a>
-        </div>
+        {/* Email */}
+        <a
+          href="mailto:gandhimeet1104@gmail.com"
+          className="
+            inline-flex items-center gap-2
+            px-6 py-3
+            border border-ink/40
+            transition-all duration-300 ease-out
+            hover:bg-ink hover:text-paper
+            hover:-translate-y-[2px]
+            hover:shadow-md
+            group
+          "
+        >
+          Email
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </a>
       </div>
     </section>
   );
