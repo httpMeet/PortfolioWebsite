@@ -1,0 +1,36 @@
+---
+title: "Locify — Secure Password Manager"
+slug: "locify"
+category: "Password Management"
+featured: true
+year: "2024"
+role: "Software Developer"
+teamSize: "Solo Project"
+duration: "2 months"
+status: "completed"
+tagline: "Client-side encrypted password manager and credential security vault."
+shortDescription: "Single-page password vault built with React.js that encrypts credentials in the browser using AES-256 and PBKDF2."
+techStack: ["React.js", "JavaScript", "CryptoJS", "Tailwind CSS"]
+github: "https://github.com/httpMeet/Locify"
+coverImage: "/images/projects/locify.png"
+---
+
+# Locify — Secure Password Manager
+
+## System Overview
+
+Locify is a client-side password vault application that encrypts saved credentials in the browser before local storage.
+
+### Problem
+Saving unencrypted passwords in local storage exposes account credentials to local inspection.
+
+### Solution
+Created a React application using CryptoJS to derive an encryption key via PBKDF2 from a master password and encrypt vault items with AES-256.
+
+---
+
+## Technical Highlights
+
+- **PBKDF2 Key Derivation**: Applied PBKDF2 key derivation with unique salt generation to convert master passwords into encryption keys.
+- **Client-Side AES-256**: Encrypted credential values in the browser using AES-256 prior to local storage.
+- **Session Auto-Lock**: Added session auto-lock logic to clear decrypted credentials from memory after inactivity.

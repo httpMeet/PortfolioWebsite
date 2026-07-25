@@ -1,4 +1,25 @@
-<<<<<<< HEAD
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/
+
+# Next.js & Build Outputs
+/.next/
+/out/
+/build
+/dist
+/.parcel-cache
+/.turbo
+/.vercel
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 # Logs
 logs
 *.log
@@ -8,51 +29,22 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Testing & Coverage
+/coverage
+/scratch
+*.png
+*.jpg
+*.jpeg
+!public/images/**/*
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS & Editor Files
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
-=======
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-/dist
-/.parcel-cache
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDE specific files
-.idea/
-.vscode/
 *.swp
 *.swo
->>>>>>> 7381a9f7123e353ff894246a6380b57ae7e1e407

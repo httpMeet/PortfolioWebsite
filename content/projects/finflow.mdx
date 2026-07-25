@@ -1,0 +1,39 @@
+---
+title: "FinFlow – Finance Ledger Engine"
+slug: "finflow"
+description: "Finance management application backend designed to track income, expenses, and financial ledger data with relational database schemas."
+status: "Completed"
+featured: true
+github: "https://github.com/httpMeet/FinFlow"
+techStack:
+  - "React"
+  - "Django"
+  - "Python"
+  - "JavaScript"
+  - "MySQL"
+---
+
+# FinFlow – Finance Ledger Engine
+
+## Problem
+Inaccurate currency representations and unindexed ledger tables cause calculation errors and slow aggregation reports in personal finance tools.
+
+## Solution
+Built a structured ledger engine featuring exact decimal column types, relational categorization schemas, and RESTful transaction endpoints.
+
+## Architecture
+- **Backend API**: Python / Django backend processing transaction ledgers.
+- **Data Engine**: Relational MySQL database configured with exact monetary schemas.
+
+## Engineering Decisions
+- Selected exact decimal data types for financial values instead of floating-point representations.
+- Normalized transaction categories to eliminate data redundancy.
+
+## Challenges
+- Structuring aggregation queries for monthly income and expense summaries.
+
+## Lessons Learned
+- Choosing correct database data types early prevents arithmetic precision bugs later.
+
+## Tech Stack
+React · Django · Python · JavaScript · MySQL

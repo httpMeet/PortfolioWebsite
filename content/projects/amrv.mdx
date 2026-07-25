@@ -1,0 +1,38 @@
+---
+title: "AMRV — AI-Powered Medical Report Vault"
+slug: "amrv"
+category: "Medical Document Vault"
+featured: true
+year: "2025"
+role: "Backend Developer"
+teamSize: "4 Team Members"
+duration: "4 months"
+status: "completed"
+tagline: "Medical report storage application with REST APIs, Azure Blob Storage, and Flask AI summarization."
+shortDescription: "Medical document vault using Laravel 12 REST endpoints, PostgreSQL, Azure Blob Storage, and an asynchronous Flask LLM service."
+techStack: ["Laravel 12", "PHP", "PostgreSQL", "Redis", "Docker", "Nginx", "Azure Blob Storage", "Flask", "Flutter"]
+github: "https://github.com/httpMeet/AMRV"
+coverImage: "/images/projects/amrv.png"
+---
+
+# AMRV — AI-Powered Medical Report Vault
+
+## System Overview
+
+AMRV (Automated Medical & Resource Validation) is a web application for storing medical reports and generating automated summaries from uploaded diagnostic documents.
+
+The backend uses **Laravel 12** as the main API application, **PostgreSQL** for database records, **Azure Blob Storage** for file persistence, and an asynchronous Python **Flask** worker for document text processing.
+
+### Problem
+Processing diagnostic PDF uploads and running text extraction synchronously during web requests causes HTTP request timeouts.
+
+### Solution
+Separated PDF ingestion from text extraction by dispatching background jobs from Laravel to a Python Flask worker using Redis queues.
+
+---
+
+## Technical Highlights
+
+- **Background Job Offloading**: Offloaded PDF text extraction to a Python Flask worker using Redis job queues to keep web requests responsive.
+- **RESTful API Controls**: Created REST API controllers and Sanctum authentication middleware in Laravel 12 for patient and clinician access.
+- **Off-Server Storage Integration**: Integrated Azure Blob Storage SDK for off-server PDF storage and temporary download links.
