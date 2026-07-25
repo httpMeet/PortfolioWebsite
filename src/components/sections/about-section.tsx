@@ -86,7 +86,7 @@ export function AboutSection() {
     {
       title: "B.E. Computer Science",
       role: "Gujarat Technological University (GTU)",
-      period: "May 2026 (Expected)",
+      period: "May 2026",
       type: "Education",
       icon: GraduationCap,
       description:
