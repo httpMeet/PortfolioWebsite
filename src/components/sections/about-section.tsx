@@ -77,7 +77,7 @@ export function AboutSection() {
     {
       title: "Simform Software LLP",
       role: "Trainee Engineer",
-      period: "Jan 2026 – Present",
+      period: "Jan 2026 - July 2026",
       type: "Experience",
       icon: Briefcase,
       description:

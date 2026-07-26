@@ -3,7 +3,7 @@ import { TimelineItem } from "@/types/timeline";
 export const timeline: TimelineItem[] = [
   {
     id: "t1",
-    year: "2024 - Present",
+    year: "2024 - 2026",
     title: "Laravel Backend Developer & Software Engineer",
     organization: "Independent Software Projects & Systems Engineering",
     location: "Ahmedabad, India",

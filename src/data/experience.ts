@@ -6,7 +6,7 @@ export const experiences: Experience[] = [
     role: "Laravel Backend Developer & Software Engineer",
     company: "Systems & Backend Development",
     location: "Ahmedabad, India",
-    period: "2024 - Present",
+    period: "2024 - 2026",
     description:
       "Engineered backend web infrastructure specializing in Laravel, relational MySQL database architecture, and REST APIs for complex business domains.",
     responsibilities: [
