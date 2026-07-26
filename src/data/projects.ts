@@ -138,7 +138,7 @@ export const projects: Project[] = [
   },
   {
     id: "proj-3",
-    title: "Locify — Secure Password Manager",
+    title: "Locify - Secure Password Manager",
     slug: "locify",
     category: "Password Management",
     featured: true,
@@ -202,7 +202,6 @@ export const projects: Project[] = [
       "MySQL",
       "Tailwind CSS",
       "Axios",
-      "CryptoJS",
     ],
 
     github: "https://github.com/httpMeet/Locify-A-Password-Manager",
