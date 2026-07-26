@@ -4,7 +4,7 @@ import { ProjectSchema } from "@/schemas/project";
 export const projects: Project[] = [
   {
     id: "proj-1",
-    title: "AMRV — AI-Powered Medical Report Vault",
+    title: "AMRV - AI-Powered Medical Report Vault",
     slug: "amrv",
     category: "Medical Document Vault",
     featured: true,
